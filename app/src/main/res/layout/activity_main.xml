@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tester.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/Num1"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/fir"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Num2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/sec"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/Result"
+        app:layout_constraintStart_toStartOf="@+id/Num1"
+        app:layout_constraintTop_toBottomOf="@+id/Num1" />
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:onClick="onButtonClicPluse"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Result"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="42dp"
+        android:text="Результат"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Num2" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:onClick="onButtonClicMult"
+        android:text="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+    <Button
+        android:id="@+id/divided"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="onButtonClicDivided"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="198dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="199dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="onButtonClicMinus"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Num1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Следующая страница"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+</android.support.constraint.ConstraintLayout>

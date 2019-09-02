@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TESTER</string>
+    <string name="fir">первое число</string>
+    <string name="sec">второе число</string>
+    <string name="ti">-</string>
+    <string name="plus">+</string>
+    <string name="res">Результат</string>
+    <string name="star">*</string>
+    <string name="slash">/</string>
+    <string name="next">Следующая страница</string>
+</resources>
